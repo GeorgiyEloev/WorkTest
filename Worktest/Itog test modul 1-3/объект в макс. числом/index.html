@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js" type="text/javascript"></script> -->
+	<!-- <script src="underscore-min.js"></script> -->
+	<title></title>
+</head>
+
+<body>
+	<script>
+		let arr1 = [1, 2, 3, 4, 5, 5, 12, 56, 21, 56, 56];
+		let arr2 = [1, 2, 3, 4, 5, 7, 8, 9, 10];
+
+		const fun = (array) => {
+			const max = _.max(array, (item) => {return item;});
+			const index = array.indexOf(max);
+			const count = _.countBy(array, (item) => {return item === max ? "yes" : "no"});
+
+			const obj = {max, index, count: count.yes};
+
+			return obj;
+		}
+
+		console.log(fun(arr1));
+	</script>
+</body>

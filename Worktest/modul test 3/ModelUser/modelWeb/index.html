@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>USER</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div>
+		<h1>ADD USER</h1>
+		<div>
+			<p>FullName:</p>
+			<input type="text" id="fullname">
+			<p>email:</p>
+			<input type="text" id="email">
+			<p>password:</p>
+			<input type="text" id="password">
+			<button onclick="addUser()">Add</button>
+		</div>
+	
+		<div>
+			<p>Delete User:</p>
+			<input type="text" id="delete">
+			<button onclick="delUser()">Delete</button>
+		</div>
+	</div>
+	<div id="users"></div>
+</body>

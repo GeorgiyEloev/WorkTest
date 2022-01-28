@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js" type="text/javascript"></script> -->
+	<!-- <script src="underscore-min.js"></script> -->
+	<title></title>
+</head>
+
+<body>
+	<script>
+		const str1 = 'https://underscorejs.org';
+		const obj1 = { a: 4, b: 8, c: "qweqwe" };
+
+		const fun = (obj) => {
+			const obj2 = {}
+
+			for (let key in obj) {
+				if (typeof (obj[key]) === "number") {
+					obj2[key] = obj[key] * 2;
+				} else {
+					obj2[key] = obj[key];
+				}
+			}
+
+			return obj2;
+		}
+
+		console.log(fun(obj1));
+	</script>
+</body>

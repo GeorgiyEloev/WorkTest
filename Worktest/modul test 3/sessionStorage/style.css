@@ -1,0 +1,7 @@
+.addUser {
+	display: flex;
+}
+
+.addUser p {
+	margin-left: 5px;
+}
